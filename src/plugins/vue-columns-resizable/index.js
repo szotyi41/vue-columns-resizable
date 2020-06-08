@@ -28,7 +28,7 @@ export default {
           th.style.width = th.offsetWidth + 'px';
 
           if (index + 1 >= ths.length) return;
-          if (!th.hasClass('resizable')) return;
+          if (!th.hasAttribute('resizable')) return;
 
           const nextTh = ths[index + 1];
           const bar = document.createElement('div');
